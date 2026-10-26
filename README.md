@@ -114,10 +114,6 @@ A Git tag is a version label; it is **not** a secret and does not securely store
 
 Suggestions and bug reports are welcome. Please include clear reproduction steps and avoid sharing real personal or financial data in issues.
 
-## License
-
-No license has been specified yet. Until a license is added, do not assume the project is licensed for redistribution or reuse.
-
 ---
 
 <div align="center">
