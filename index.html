@@ -118,7 +118,7 @@
   async function checkApkAvailability(){
     const link=$('#apkDownload'), status=$('#apkStatus');
     const setAvailable=()=>{link.setAttribute('aria-disabled','false');link.removeAttribute('tabindex');link.textContent='Download APK ↓';status.textContent='Android APK is available. Tap to download and install.';};
-    const setUnavailable=()=>{link.setAttribute('aria-disabled','true');link.setAttribute('tabindex','-1');link.textContent='APK coming soon';status.textContent='Add the built app at apk/SplitMate.apk to enable this download.';};
+    const setUnavailable=()=>{link.setAttribute('aria-disabled','true');link.setAttribute('tabindex','-1');link.textContent='APK coming soon';status.textContent='Improvement underwayyy';};
     if(location.protocol==='file:'){link.setAttribute('aria-disabled','false');link.removeAttribute('tabindex');link.textContent='Download APK ↓';status.textContent='Download link is set to apk/SplitMate.apk. Add the APK file to that folder.';return;}
     try{const response=await fetch('./apk/SplitMate.apk',{method:'HEAD',cache:'no-store'});if(response.ok)setAvailable();else setUnavailable();}catch(e){setUnavailable();}
   }
